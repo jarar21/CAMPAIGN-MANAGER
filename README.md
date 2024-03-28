@@ -11,7 +11,7 @@ Campaign Manager is a web application that allows users to browse and manage cam
 - [Contributing](#contributing)
 - [License](#license)
 
-![Uploading screencapture-localhost-3000-2024-03-28-09_00_41.png…]()
+[![Uploading screencapture-localhost-3000-2024-03-28-09_00_41.png…]()](https://github.com/jarar21/Campaign-Manager/blob/main/frontend/public/screencapture-localhost-3000-2024-03-28-09_00_41.png)
 
 ## Features
 
