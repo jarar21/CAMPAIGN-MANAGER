@@ -39,30 +39,28 @@ To get started with Campaign Manager, follow these steps:
    ```bash
    git clone https://github.com/your-username/campaign-manager.git
 
-Install dependencies for the frontend:
+2. Install dependencies for the frontend:
 
-```bash
-cd campaign-manager/frontend
-npm install
-```
-Install dependencies for the backend:
+   ```bash
+   cd campaign-manager/frontend
+   npm install
 
-bash
-Copy code
-cd ../backend
-pip install -r requirements.txt
-Set up your PostgreSQL database and update the database configuration in backend/settings.py.
+3. Install dependencies for the backend:
 
-Run the development server for the frontend:
+   ```bash
+   cd ../backend
+   pip install -r requirements.txt
 
-bash
-Copy code
-npm run dev
-Run the development server for the backend:
+4. Run the development server for the frontend:
 
-bash
-Copy code
-python manage.py runserver
+   ```bash
+   npm run dev
+
+5. Run the development server for the backend:
+
+   ```bash
+   python manage.py runserver
+
 Access the application in your web browser at http://localhost:3000.
 
 
