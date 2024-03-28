@@ -38,11 +38,13 @@ To get started with Campaign Manager, follow these steps:
 
    ```bash
    git clone https://github.com/your-username/campaign-manager.git
+
 Install dependencies for the frontend:
 
 ```bash
 cd campaign-manager/frontend
 npm install
+```
 Install dependencies for the backend:
 
 bash
