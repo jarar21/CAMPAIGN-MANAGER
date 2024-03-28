@@ -1,0 +1,119 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: aliceblue; /* Remove background color from wrapper */
+}
+
+.container {
+  width: 100%; /* Make container full width */
+  max-width: 600px;
+  padding: 30px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333333;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #555555;
+}
+
+.input,
+.textarea {
+  padding: 16px; /* Increase padding for input fields */
+  margin-bottom: 20px;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  font-size: 16px;
+  color: black;
+  font-family: san merriwether, sans-serif;
+  background-color: #ffffff; /* Set input background to white */
+}
+
+.label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.fileInputContainer {
+  display: inline-block;
+  overflow: hidden;
+}
+
+.fileInputContainer label {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #2bc438;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.fileInputContainer input[type="file"] {
+  left: 0;
+  top: 0;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.button {
+  padding: 12px 24px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+.img {
+  
+  align-items: center;
+  max-height: 250px;
+  margin-bottom: 1rem;
+  width:100%;
+  object-fit:cover;
+  
+}

@@ -1,0 +1,162 @@
+.wrapper{
+  height:100vh;
+  width: 100%;
+  z-index: 1;
+}
+.main{
+  background-image: url("https://images.pexels.com/photos/2422286/pexels-photo-2422286.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-position: center;
+  background-color: #001101;
+  opacity: 0.2;
+}
+.content{
+  width: 100%;
+  padding: 7rem 10rem;
+  z-index: 2;
+  position: absolute;
+}
+.img {
+  align-items: center;
+  max-height: 200px;
+  margin-bottom: 1rem;
+  width:100%;
+  object-fit:cover;
+}
+.grid{
+  display: flex;
+}
+.left{
+  width: 50%;
+  color: black;
+}
+.right{
+  width: 50%;
+}
+.rightContent{
+  margin-left: 6rem ;
+  margin-top: 10rem;
+}
+.title {
+  margin: 0;
+  font-size: 1.5rem;
+  text-transform: uppercase; /* Convert title to uppercase */
+  color: #ffffff;
+}
+
+.description {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.date {
+  color: #ffffff;
+  font-size: 0.9rem;
+}
+.formGroup {
+  margin-bottom: 15px;
+}
+.input{
+  font-size: 15px;
+  color: #444951;
+  background: #ffffff;
+  padding: 12px;
+  border: 1px solid #e3e3e3;
+  -webkit-box-flex: 1;
+  flex: 1 0 auto;
+  line-height: 1.4;
+  width: 100%;
+  border-width: 1px;
+  color:#444951;
+  border-radius: 0;
+  font-weight: 400;
+  height: 45px;
+  border-color: #ffffff;
+}
+
+.input:focus {
+  
+  outline: none;
+}
+.btn{
+  font-size: 15px;
+  color: #ffffff;
+  background: #444951;
+  padding: 12px;
+  border: 1px solid #e3e3e3;
+  -webkit-box-flex: 1;
+  flex: 1 0 auto;
+  line-height: 1.4;
+  width: 100%;
+  border-width: 1px;
+  color:#ffffff;
+  border-radius: 0;
+  font-weight: 400;
+  height: 45px;
+  border-color: #444951;
+}
+
+.btn:hover{
+  background: #1c46a6;
+}
+
+.thankyou{
+  height: 200px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8rem;
+}
+
+.message{
+  font-size: 20px;
+  padding-left: 12px;
+  color: #ffffff;
+  margin-top: 10px;
+}
+
+@media (max-width: 1024px) {
+  
+  .grid{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content {
+    padding: 2rem 4rem;
+  }
+
+  .left{
+    width: 100%;
+  }
+
+  /* Move right content below left content */
+  .right {
+    width: 100%;
+    display: flex;
+    padding-left: 0;
+    margin-top: 15px;
+  }
+  .rightContent{
+    margin-left: 0rem;
+    flex: 1;
+    align-self: center;
+  }
+}
+.editIcon{
+  font-size: 24px;
+  color: white;
+  float:right;
+
+}
+.edit{
+  display: inline-block;
+}

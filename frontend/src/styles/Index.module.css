@@ -1,0 +1,410 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #070d26;
+  color: rgb(255, 255, 255);
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  text-align: center;
+}
+
+.title {
+  font-family:"Workbench", sans-serif;
+  font-size: 5rem;
+  line-height: 93.6px;
+    letter-spacing: -0.04rem;
+    font-weight: 700;
+}
+
+.description {
+  font-family: "Tauri", sans-serif;
+  font-size: 1.5rem;
+  color: white;
+  border-color: rgb(93, 151, 209);
+  margin-bottom: 2rem;
+}
+.registerButton {
+    letter-spacing: 0.5px;
+    line-height: 0.875rem;
+    font-weight: 600;
+    display: inline-flex;
+    width: 25%;
+    box-sizing: border-box;
+    justify-content: center;
+    border: 1px solid rgb(203, 25, 119);
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    background-color: rgb(203, 25, 119);
+    border-radius: 0.25rem;
+    padding: 1rem 1.5rem;
+    font-size: 0.875rem;
+    text-decoration: none;
+}
+
+.registerButton:hover {
+  background-color: rgba(172, 8, 71, 1); /* Darker shade of the main color */
+  border-color: #a41f73; /* Darker shade of the main color */
+}
+.exploreButton {
+  letter-spacing: 0.5px;
+  line-height: 0.875rem;
+  font-weight: 600;
+  display: inline-flex;
+  width: 25%;
+  box-sizing: border-box;
+  justify-content: center;
+  border: 1px solid rgb(203, 25, 119);
+  cursor: pointer;
+  color: #0C1439;
+  background-color: rgb(255, 255, 255);
+  border-radius: 0.25rem;
+  padding: 1rem 1.5rem;
+  font-size: 0.875rem;
+  text-decoration: none;
+  margin-left: 1rem;
+}
+
+.exploreButton:hover {
+background-color: rgba(172, 8, 71, 1); /* Darker shade of the main color */
+border-color: #a41f73; /* Darker shade of the main color */
+}
+.buttons{
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.additionalContent{
+  height: 500px;
+  justify-content: center;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.additionalContainer {
+  display: flex;
+  justify-content: space-between; /* Adjust the margin as needed */
+  background-color: #fff; /* White background for the container */
+  padding: 2.5rem 12rem 2.5rem 12rem;
+  width: 100vw;
+  margin-left: -29px;
+  gap: 4rem;
+  line-height: 2.75rem;
+
+  
+}
+
+.leftContent {
+  flex: 1;
+  width: 45%;
+  margin-right: 1rem; /* Adjust the margin between columns */
+  padding: 2rem; /* Adjust padding as needed */
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center items vertically */
+  text-align: left;
+  letter-spacing: 0.25px;
+  
+}
+
+.rightContent {
+  flex: 1;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  position: relative;
+  box-sizing: border-box;
+  width: 45%;
+}
+
+.leftContent h2 {
+  font-size: 2.5rem;
+    letter-spacing: 0.25px;
+    font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+    color: #0C1439;
+    font-family: "Poppins", sans-serif;;
+    padding-bottom: 2rem;
+}
+
+.leftContent p {
+  margin-bottom: 0.5rem; /* Add margin below paragraphs */
+  color: rgb(12, 20, 57);
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+    font-size: 1rem;
+    letter-spacing: 0px;
+    line-height: 1.5rem;
+    color: #0C1439;
+}
+
+.rightContent img {
+  width: 100%; /* Make the image fill its container */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.imagebox {
+  width: 100%;
+  height: 100%; /* Set the height to 500px */
+  position: relative;
+  overflow: hidden;
+  background-color: #ffffff;
+  border-radius: 10px;
+  }
+
+  .numberblock {
+    position: absolute;
+    top: 60%; /* Adjusted top position to bring the block closer to the center */
+    right: 80%;
+    transform: translate(50%, -50%);
+    background-color: #ffffff; /* Green color for the label background */
+    color: rgb(0, 172, 168);
+    padding: 10px 20px;
+    border-radius: 5px;
+    z-index: 1; /* Ensure the text is on top of the image */
+    font-size: 30px; /* Increase font size */
+    text-align: center; /* Center-align the text */
+    font-weight: 800;
+    font-family: san merriwether, sans-serif;
+    
+  }
+  
+  .numberblock span {
+    display: block; /* Ensure each span is on a new line */
+  }
+  
+  .speakers {
+    font-size: 18px; /* Set smaller font size for speakers */
+    color: #0C1439;
+    font-weight: 400;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+.imagewrapper {
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.imagewrapper img {
+  width: 70%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 30px;
+}
+.overlayContainer{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem; /* Adjust the margin as needed */
+  padding: 1rem 10rem 1rem 10rem;
+  width: 100vw;
+  gap: 4rem;
+  position: relative;
+
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: 1fr;
+  height: auto;
+  border-radius: 10px;
+  overflow: hidden;
+  grid-gap: 20px;
+  
+  
+}
+
+.img {
+  position: relative;
+  overflow: hidden;
+  
+}
+
+.img img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.4);
+}
+
+.img_top {
+  grid-column: 7 / span 5; /* Adjusted grid column and span for top image */
+  grid-row: 1;
+  padding: 20% 0 20% 0;
+  padding: 40% 0 20% 0;
+  z-index: 1;
+}
+
+.img_bottom {
+  grid-column: 5 / span 5; /* Adjusted grid column and span for bottom image */
+  grid-row: 1;
+  padding: 20% 0 20% 0;
+}
+
+.contentContainer {
+  grid-column: 1 / span 6;
+  grid-row: 1;
+  padding: 2rem;
+  color: #fff;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 10rem;
+  
+  
+}
+.contentContainer h2 {
+  font-size: 3rem;
+    letter-spacing: 0.25px;
+    font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+    color: #ffffff;
+    font-family: "Poppins", sans-serif;;
+    padding-bottom: 2rem;
+}
+
+.contentContainer p {
+  margin-bottom: 0.5rem; /* Add margin below paragraphs */
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+    font-size: 1.25rem;
+    letter-spacing: 0px;
+    line-height: 1.5rem;
+    color: #ffffff;
+}
+
+.OverlayContain {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  padding: 2.5rem 12rem 2.5rem 12rem;
+  background-color: #fff; /* Optional background color */
+  height: 542px;
+  background: linear-gradient(to bottom, #008484, #E79A28);
+  width: 100vw;
+  margin-left: -32px;
+  margin-bottom: -32px;
+  
+}
+
+.ContentColumn {
+  width: 45%;
+  padding: 6rem 3rem 1rem 1rem;
+}
+
+.ContentColumn h2 {
+  font-size: 2.5rem;
+    letter-spacing: 0.25px;
+    font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+    color: #ffffff;
+    font-family: "Poppins", sans-serif;;
+    padding-bottom: 1rem;
+    text-align: left;
+}
+
+.ContentColumn p {
+  margin-bottom: 0.5rem; /* Add margin below paragraphs */
+  color: rgb(255, 255, 255);
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+    font-size: 1rem;
+    letter-spacing: 0px;
+    line-height: 1.5rem;
+    text-align: left;
+}
+
+.Button {
+  background-color: #5D97D1;
+  color: #fff;
+  padding: 1rem 10rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+  margin-top: 1rem;
+  align-items: center;
+  background-color: #008484;
+  letter-spacing: 0.5px;
+  line-height: 0.875rem;
+  font-weight: 600;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 0.875rem;
+  text-decoration: none;
+  transition: all 0.25s ease-out 0s;
+}
+.Button:hover {
+  background-color: #065a5a;
+}
+
+.GridContainer {
+  width: 45%;
+  position: relative;
+}
+
+.BackgroundImage {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url(https://websummit.com/wp-media/2023/08/praca-comercio-2.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+}
+
+.ImageColumnLeft {
+  position: absolute;
+  top: 10%;
+  left: -7%;
+  width: 30%;
+  height: 60%;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.4);
+  object-fit: fill;
+  aspect-ratio: 16 / 9;
+}
+.ImageColumnLeft img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.ImageColumnRight {
+  position: absolute;
+  top: 50%;
+  right: -9%;
+  width: 30%;
+  height: 40%;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.4);
+}
+.ImageColumnRight img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.ImageColumn img {
+  width: 100%;
+  height: 100%;
+}

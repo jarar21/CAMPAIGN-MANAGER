@@ -1,0 +1,128 @@
+.carouselContainer {
+    height: 100vh; /* Use viewport height for full-page height */
+    width: 100vw; /* Use viewport width for full-page width */
+    position: relative;
+    overflow: hidden; /* Hide any overflowing content */
+    margin-left: -32px;
+    margin-top: -32px;
+    
+  }
+  
+  .slide {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .imageContainer {
+    width: 100%;
+    height: 615px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.5s ease;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  
+  .textContainer {
+    font-family: san merriwether, sans-serif;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end; /* Align content to the bottom */
+    padding-left: 50px;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding-bottom: 5rem;
+    box-sizing: border-box;
+    z-index: 2; /* Ensure text container is above the image */
+  }
+  
+  .title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 1px black;
+    position: relative;
+    z-index: 2; /* Ensure title is above the image */
+    padding-bottom: 0.25rem;
+  }
+  
+  .description {
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+    margin-bottom: 10px;
+    color: white;
+    font-weight: 300;
+    text-shadow: 1px 1px 1px black;
+    position: relative;
+    z-index: 2; /* Ensure description is above the image */
+    padding-bottom: 0.25rem;
+    text-align: left;
+  }
+  
+  .registerButton {
+    letter-spacing: 0.5px;
+    line-height: 0.875rem;
+    font-weight: 600;
+    display: inline-flex;
+    width: 15%;
+    box-sizing: border-box;
+    justify-content: center;
+    border: 1px solid rgb(203, 25, 119);
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    background-color: rgb(203, 25, 119);
+    border-radius: 0.25rem;
+    padding: 1rem 1.5rem;
+    font-size: 0.875rem;
+    text-decoration: none;
+    float:right;
+}
+
+.registerButton:hover {
+  background-color: rgba(172, 8, 71, 1); /* Darker shade of the main color */
+  border-color: #a41f73; /* Darker shade of the main color */
+}
+.exploreButton {
+  letter-spacing: 0.5px;
+  line-height: 0.875rem;
+  font-weight: 600;
+  display: inline-flex;
+  width: 15%;
+  box-sizing: border-box;
+  justify-content: center;
+  border: 1px solid rgb(203, 25, 119);
+  cursor: pointer;
+  color: #0C1439;
+  background-color: rgb(255, 255, 255);
+  border-radius: 0.25rem;
+  padding: 1rem 1.5rem;
+  font-size: 0.875rem;
+  text-decoration: none;
+  margin-left: 1rem;
+  float:right;
+  margin-right: 13rem;
+}
+
+.exploreButton:hover {
+background-color: rgba(172, 8, 71, 1); /* Darker shade of the main color */
+border-color: #a41f73; /* Darker shade of the main color */
+}
+.buttons{
+  flex-direction: column;
+  width: 100%;
+}

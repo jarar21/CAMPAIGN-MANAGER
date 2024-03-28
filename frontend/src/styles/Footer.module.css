@@ -1,0 +1,15 @@
+.footer {
+    background-color: #f0f0f0;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer__logo img {
+    width: 100px; /* Adjust logo size as needed */
+    height: auto; /* Maintain aspect ratio */
+  }
+  .link{
+    color: black;
+  }

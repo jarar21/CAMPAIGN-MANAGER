@@ -1,0 +1,88 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 1.75rem; /* Adjust padding as needed */
+  background-color: #ffffff;
+  color: #0c0b0b;
+  height: 5rem; /* Adjust height as needed */
+  padding-left: 2rem;
+  padding-right: 2rem;
+  line-height: 1.5rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Ensure the header is above other content */
+}
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logoImg {
+    width: 40px; /* Adjust as needed */
+    height: 40px; /* Adjust as needed */
+    margin-right: 0.5rem;
+  }
+  
+  .siteName {
+    font-size: 1.5rem;
+  }
+  
+  /* Menu styles */
+  .menu {
+    display: flex;
+  }
+  
+  .menuList {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .menuItem {
+    margin-right: 1rem;
+  }
+  
+  .menuLink {
+    display: flex;
+    height: 100%;
+    color: rgb(12, 20, 57);
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 0px;
+    padding: 1rem 0px;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-decoration: none;
+  }
+  
+  .menuLink:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .registerButton {
+    background-color: rgb(203, 25, 119);
+    border: 1px solid rgb(203, 25, 119);
+    border-radius: 4px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    display: flex;
+    font-size: 14px;
+    font-weight: 600;
+    justify-content: center;
+    padding: 8px 12px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.25s ease-out, border-color 0.25s ease-out;
+    width: 208px;
+  }
+  
+  .registerButton:hover {
+    background-color: rgba(172, 8, 71, 1); /* Darker shade of the main color */
+    border-color: #a41f73; /* Darker shade of the main color */
+  }
+  .icon{
+    margin-right: 0.25rem;
+  }
+  
